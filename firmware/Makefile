@@ -18,7 +18,7 @@ build-$(OUT): mpy-cross
 	 	make -C src
 	
 $(OUT): build-$(OUT)
-	ln -s micropython-microbit-v2/src/MICROBIT.hex $(OUT)
+	cp -v micropython-microbit-v2/src/MICROBIT.hex $(OUT)
 
 clean:
 	rm -f $(OUT)
