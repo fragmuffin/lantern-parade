@@ -15,7 +15,7 @@ mpy-cross:
 
 build-$(OUT): mpy-cross
 	$(DOCKER_COMPOSE) run --rm -u $(CURRENT_UID) $(SERVICE) \
-	 	bash -c 'git config --global --add safe.directory /code/lib/codal && make -C src'
+	 	make -C src
 	
 $(OUT): build-$(OUT)
 	ln -s micropython-microbit-v2/src/MICROBIT.hex $(OUT)
