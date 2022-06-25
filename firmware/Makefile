@@ -1,5 +1,5 @@
 DOCKER_COMPOSE	= docker-compose
-SERVICE			= compile
+SERVICE			= microbit_upy
 
 OUT				= MICROBIT.hex
 
